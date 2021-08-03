@@ -27,7 +27,10 @@ def operate():
         arr = arr.split(" ")
         
         dob = dob.replace("-","")
-        
+        year = dob[:4]
+        month = dob[4:6]
+        day = dob[6:8]
+        dob = day+month+year
         user_id = str(name + "_" + dob)
         result=[]
         even=[]
